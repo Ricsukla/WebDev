@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform with transition</title>
+    <style>
+        .box{
+            height:50px;
+            width:50px;
+            border:2px solid black;
+            border-radius:5px;
+            background-color:pink;
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: 1s;
+        }
+        .box:hover{transform: rotate(45deg);}
+        /*--rotatex means rotating around horizontal axis and rotatey means rotating around vertical axis and rotatez will give rotation like the default pattern--*/
+
+    </style>
+</head>
+<body>
+    <div class="box">Rotate</div>
+
+</body>
+</html>

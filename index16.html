@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform with translate</title>
+    <style>
+        .box{
+            height:50px;
+            width:50px;
+            border:2px solid black;
+            border-radius:5px;
+            background-color:pink;
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+        }
+        #box1{background-color: blueviolet;}
+        #box1:hover{transform: translate(50px);}/*--or translatex(50px)--*/
+        #box2{background-color: orchid;}
+        #box2:hover{transform: translate(30px,50px);}
+        #box3{background-color: orange;}
+        #box3:hover{transform: translatey(60px);}
+    </style>
+</head>
+<body>
+    <div id="box1" class="box">Rotate</div>
+    <div id="box2" class="box">Rotate2</div>
+    <div id="box3" class="box">Rotate3</div>
+</body>
+</html>

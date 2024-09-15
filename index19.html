@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation percentage</title>
+    <style>
+        .box{
+            height:50px;
+            width:50px;
+            border:2px solid black;
+            border-radius:5px;
+            background-color:pink;
+            position: relative;
+            top:10px;
+            left:10px;
+
+            animation: ghumo 2s ease-in-out 1s infinite alternate;
+        }
+        @keyframes ghumo{
+            0%{left:10px;}
+            50%{left:50px;}
+            100%{left:200px}/*--pehle dheere then badhega--*/
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="box1" class="box">Rotate</div>
+ 
+
+
+
+
+</body>
+</html>

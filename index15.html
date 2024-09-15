@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform with scale</title>
+    <style>
+        .box{
+            height:50px;
+            width:50px;
+            border:2px solid black;
+            border-radius:5px;
+            background-color:pink;
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+        }
+        #box1{background-color: blueviolet;}
+        #box1:hover{transform: scale(2);}
+        #box2{background-color: orchid;}
+        #box2:hover{transform: scalex(4);}
+        #box3{background-color: orange;}
+        #box3:hover{transform: scaley(4);}
+        #box4{background-color: pink}
+        #box4:hover{transform: scalez(3);}
+        /*--no changes shown as such to the use--*/
+        #box5{background-color: red}
+        #box5:hover{transform: scale(2,2);}
+    </style>
+</head>
+<body>
+    <div id="box1" class="box">Rotate</div>
+    <div id="box2" class="box">Rotate2</div>
+    <div id="box3" class="box">Rotate3</div>
+    <div id="box4" class="box">Rotate4</div>
+    <div id="box5" class="box">Rotate5</div>
+
+
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>haan bhai</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+    *{
+        margin:7px;
+        padding:0;
+    }
+    .box{
+        height:100px;
+        width:100px;
+        border:3px solid black;
+        margin:5px;
+    }
+    #heading{text-align:center;}
+    #container{
+        height:300px;
+        width:600px;
+        padding:10px;
+        margin:20px;
+        border:3px solid black;
+        display:grid;
+        grid-template-columns: 80px 100px;
+        grid-template-rows: 50px 100px;
+    }
+    #box1{ grid-row:2/2; grid-column:1/2;background-color:blue;}
+    #box2{grid-row:1/2; grid-column:2/2;background-color: deepskyblue;}
+    #box3{grid-row:1/2; grid-column:1/2;background-color: lawngreen;}
+    #box4{grid-column:2/2; grid-row:2/2;background-color: darkorchid;}
+    
+    </style>
+
+<body>
+    <h1 id="heading">Flex Heading</h1>
+    <div id="container">
+        <div id="box1" class="box">Box1</div>
+        <div id="box2" class="box">Box2</div>
+        <div id="box3" class="box">Box3</div>
+        <div id="box4" class="box">Box4</div>
+
+    </div>
+</body>
+</html>

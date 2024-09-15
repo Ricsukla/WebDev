@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .box{
+            padding:5px;
+            height:100px;
+            width:100px;
+            background-color: yellowgreen;
+        }
+        @media screen and (max-width:300px)/*--or(min-width:300px) if the size of the screen is 300 or more it will be applied then--*/{
+            .box{
+                background-color: black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">Box</div>
+</body>
+</html>
